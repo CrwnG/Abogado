@@ -27,10 +27,9 @@
       theme: {
         extend: {
           colors: {
-            navy: { DEFAULT: '#1b2a4a', dark: '#0a1628', mid: '#0d1b3e', light: '#2a3f6a' },
-            silver: { DEFAULT: '#8c9bb5', light: '#a0aec0' },
-            gold: { DEFAULT: '#c9a84c', light: '#e0c97f' },
-            surface: '#f8f9fa',
+            ensign: { DEFAULT: '#1B3A5C', dark: '#122840', mid: '#163050', light: '#2a5580' },
+            oxford: { DEFAULT: '#3C3F41', light: '#5a5d60' },
+            surface: '#f5f6f8',
           },
           fontFamily: {
             heading: ['Montserrat', 'sans-serif'],
@@ -44,7 +43,7 @@
 
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="font-body bg-navy-dark text-white antialiased">
+<body class="font-body bg-white text-oxford antialiased">
 
   <!-- Cursor Glow -->
   <div class="cursor-glow"></div>
@@ -91,7 +90,7 @@
       </div>
 
       <!-- Mobile Hamburger -->
-      <button class="mobile-menu-btn lg:hidden text-white p-2" aria-label="Open menu" aria-expanded="false">
+      <button class="mobile-menu-btn lg:hidden p-2" aria-label="Open menu" aria-expanded="false">
         <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5"/>
         </svg>
@@ -107,7 +106,7 @@
     <a href="nosotros.html"><span data-lang="es">Nosotros</span><span data-lang="en" class="hidden">About</span></a>
     <a href="servicios.html"><span data-lang="es">Servicios</span><span data-lang="en" class="hidden">Services</span></a>
     <a href="contacto.html"><span data-lang="es">Contacto</span><span data-lang="en" class="hidden">Contact</span></a>
-    <div class="mt-8 pt-8 border-t border-gold/10">
+    <div class="mt-8 pt-8 border-t border-ensign/10">
       <div class="lang-toggle mb-8">
         <button class="lang-btn active" data-lang-btn="es">ES</button>
         <button class="lang-btn" data-lang-btn="en">EN</button>
@@ -126,7 +125,7 @@
     <!-- ===== HERO (Inner Page) ===== -->
     <section class="hero--inner relative flex items-center justify-center" style="min-height:60vh;">
       <!-- Background -->
-      <div class="absolute inset-0 bg-gradient-to-br from-navy-dark via-navy-mid to-navy-dark"></div>
+      <div class="absolute inset-0 bg-gradient-to-br from-ensign-dark via-ensign-mid to-ensign-dark"></div>
       <div class="absolute inset-0 opacity-[0.03]" style="background-image:url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;%3E%3Cg fill=&quot;%23c9a84c&quot; fill-opacity=&quot;0.4&quot;%3E%3Cpath d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
 
       <!-- Decorative Lines -->
@@ -152,7 +151,7 @@
     </section>
 
     <!-- ===== FIRM STORY ===== -->
-    <section class="py-24 lg:py-36 bg-navy-dark">
+    <section class="py-24 lg:py-36 bg-white">
       <div class="max-w-7xl mx-auto px-6 lg:px-12">
         <div class="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
           <!-- Left Column: Statement -->
@@ -167,8 +166,8 @@
             </h2>
 
             <!-- Portrait Placeholder -->
-            <div class="relative w-full aspect-[4/5] max-w-sm bg-gradient-to-br from-navy via-navy-mid to-navy-dark border border-white/5 flex items-center justify-center overflow-hidden">
-              <div class="absolute inset-0 bg-gradient-to-t from-navy-dark/80 to-transparent"></div>
+            <div class="relative w-full aspect-[4/5] max-w-sm bg-gradient-to-br from-surface via-ensign-mid to-ensign-dark border border-ensign/10 flex items-center justify-center overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-t from-ensign-dark/80 to-transparent"></div>
               <svg class="w-20 h-20 text-white/10 relative z-10" fill="none" stroke="currentColor" stroke-width="0.8" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
               </svg>
@@ -181,7 +180,7 @@
 
           <!-- Right Column: Narrative -->
           <div class="lg:col-span-7 reveal">
-            <div class="space-y-6 text-white/60 text-lg leading-relaxed">
+            <div class="space-y-6 text-oxford-light text-lg leading-relaxed">
               <p>
                 <span data-lang="es">Antes de fundar Medjur, vimos algo que nos marc&oacute;: emprendedores con ideas brillantes que perd&iacute;an todo por un mal contrato. Empresarios extranjeros que llegaban a Tijuana con capital y energ&iacute;a, pero sin nadie que les explicara las reglas del juego. Negocios familiares que se desmoronaban no por falta de talento, sino por falta de estructura legal.</span>
                 <span data-lang="en" class="hidden">Before founding Medjur, we witnessed something that left a mark: entrepreneurs with brilliant ideas who lost everything because of a bad contract. Foreign business owners who arrived in Tijuana with capital and energy, but no one to explain the rules of the game. Family businesses that crumbled not from lack of talent, but from lack of legal structure.</span>
@@ -191,8 +190,8 @@
                 <span data-lang="en" class="hidden">That couldn't keep happening. Not in a city with as much opportunity as Tijuana.</span>
               </p>
               <p>
-                <span data-lang="es">Medjur naci&oacute; con una idea simple: <strong class="text-white">que ning&uacute;n empresario en esta frontera se quede sin protecci&oacute;n legal seria.</strong> No importa si su empresa factura millones o si apenas est&aacute; comenzando. No importa si habla espa&ntilde;ol, ingl&eacute;s, o ambos. Usted merece un abogado que le responda el tel&eacute;fono, que entienda su negocio, y que pelee por &eacute;l.</span>
-                <span data-lang="en" class="hidden">Medjur was born from a simple idea: <strong class="text-white">that no business owner on this border should be left without serious legal protection.</strong> It doesn't matter if your company bills millions or if you're just getting started. It doesn't matter if you speak Spanish, English, or both. You deserve a lawyer who answers the phone, who understands your business, and who fights for it.</span>
+                <span data-lang="es">Medjur naci&oacute; con una idea simple: <strong class="text-oxford">que ning&uacute;n empresario en esta frontera se quede sin protecci&oacute;n legal seria.</strong> No importa si su empresa factura millones o si apenas est&aacute; comenzando. No importa si habla espa&ntilde;ol, ingl&eacute;s, o ambos. Usted merece un abogado que le responda el tel&eacute;fono, que entienda su negocio, y que pelee por &eacute;l.</span>
+                <span data-lang="en" class="hidden">Medjur was born from a simple idea: <strong class="text-oxford">that no business owner on this border should be left without serious legal protection.</strong> It doesn't matter if your company bills millions or if you're just getting started. It doesn't matter if you speak Spanish, English, or both. You deserve a lawyer who answers the phone, who understands your business, and who fights for it.</span>
               </p>
               <p>
                 <span data-lang="es">Eso es lo que hacemos. Todos los d&iacute;as. Sin excepciones.</span>
@@ -205,13 +204,13 @@
     </section>
 
     <!-- ===== ATTORNEY PROFILE ===== -->
-    <section class="py-24 lg:py-36 bg-navy-mid/30">
+    <section class="py-24 lg:py-36 bg-surface">
       <div class="max-w-7xl mx-auto px-6 lg:px-12">
         <div class="grid lg:grid-cols-12 gap-12 lg:gap-20 items-start">
           <!-- Left: Photo Placeholder -->
           <div class="lg:col-span-5 reveal">
-            <div class="relative w-full aspect-[3/4] bg-gradient-to-br from-navy-light/30 via-navy to-navy-dark border border-white/5 flex items-center justify-center overflow-hidden">
-              <div class="absolute inset-0 bg-gradient-to-t from-navy-dark/60 to-transparent"></div>
+            <div class="relative w-full aspect-[3/4] bg-gradient-to-br from-ensign-light/30 via-ensign to-ensign-dark border border-ensign/10 flex items-center justify-center overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-t from-ensign-dark/60 to-transparent"></div>
               <svg class="w-24 h-24 text-white/10 relative z-10" fill="none" stroke="currentColor" stroke-width="0.6" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
               </svg>
@@ -219,10 +218,10 @@
                 <span data-lang="es">Retrato profesional</span>
                 <span data-lang="en" class="hidden">Professional portrait</span>
               </span>
-              <!-- Gold accent corner -->
+              <!-- Ensign accent corner -->
               <div class="absolute top-0 right-0 w-16 h-16">
-                <div class="absolute top-0 right-0 w-full h-px bg-gold/40"></div>
-                <div class="absolute top-0 right-0 h-full w-px bg-gold/40"></div>
+                <div class="absolute top-0 right-0 w-full h-px bg-ensign/40"></div>
+                <div class="absolute top-0 right-0 h-full w-px bg-ensign/40"></div>
               </div>
             </div>
           </div>
@@ -236,12 +235,12 @@
             <h2 class="font-heading font-extrabold text-[clamp(2rem,4vw,3rem)] leading-tight mb-2">
               [Nombre del Abogado]
             </h2>
-            <p class="text-gold font-heading font-semibold text-sm uppercase tracking-[0.15em] mb-8">
+            <p class="text-ensign font-heading font-semibold text-sm uppercase tracking-[0.15em] mb-8">
               <span data-lang="es">Fundador &amp; Director Legal</span>
               <span data-lang="en" class="hidden">Founder &amp; Legal Director</span>
             </p>
 
-            <div class="text-white/60 text-lg leading-relaxed space-y-5 mb-10">
+            <div class="text-oxford-light text-lg leading-relaxed space-y-5 mb-10">
               <p>
                 <span data-lang="es">No se convirti&oacute; en abogado para sentarse detr&aacute;s de un escritorio. Lo hizo porque creci&oacute; viendo c&oacute;mo la falta de orientaci&oacute;n legal destruye negocios buenos en manos de gente buena. Tijuana es una ciudad de oportunidad, pero tambi&eacute;n de complejidad legal. Y alguien ten&iacute;a que cerrar esa brecha.</span>
                 <span data-lang="en" class="hidden">He didn't become a lawyer to sit behind a desk. He did it because he grew up watching how the lack of legal guidance destroys good businesses in the hands of good people. Tijuana is a city of opportunity, but also of legal complexity. And someone had to close that gap.</span>
@@ -255,37 +254,37 @@
             <!-- Credentials -->
             <div class="space-y-4">
               <div class="flex items-start gap-4">
-                <svg class="w-5 h-5 text-gold mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-ensign mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342"/>
                 </svg>
-                <p class="text-white text-sm font-medium">
+                <p class="text-oxford text-sm font-medium">
                   <span data-lang="es">Licenciatura en Derecho &mdash; [Universidad]</span>
                   <span data-lang="en" class="hidden">Law Degree &mdash; [University]</span>
                 </p>
               </div>
               <div class="flex items-start gap-4">
-                <svg class="w-5 h-5 text-gold mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-ensign mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342"/>
                 </svg>
-                <p class="text-white text-sm font-medium">
+                <p class="text-oxford text-sm font-medium">
                   <span data-lang="es">Maestr&iacute;a en Derecho Corporativo &mdash; [Universidad]</span>
                   <span data-lang="en" class="hidden">Master's in Corporate Law &mdash; [University]</span>
                 </p>
               </div>
               <div class="flex items-start gap-4">
-                <svg class="w-5 h-5 text-gold mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-ensign mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.745 3.745 0 011.043 3.296A3.745 3.745 0 0121 12z"/>
                 </svg>
-                <p class="text-white text-sm font-medium">
+                <p class="text-oxford text-sm font-medium">
                   <span data-lang="es">Miembro del Colegio de Abogados de Baja California</span>
                   <span data-lang="en" class="hidden">Member of the Baja California Bar Association</span>
                 </p>
               </div>
               <div class="flex items-start gap-4">
-                <svg class="w-5 h-5 text-gold mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-ensign mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/>
                 </svg>
-                <p class="text-white text-sm font-medium">
+                <p class="text-oxford text-sm font-medium">
                   <span data-lang="es">Especialista en operaciones transfronterizas M&eacute;xico-EE.UU.</span>
                   <span data-lang="en" class="hidden">Specialist in Mexico-U.S. cross-border operations</span>
                 </p>
@@ -297,7 +296,7 @@
     </section>
 
     <!-- ===== VALUES ===== -->
-    <section class="py-24 lg:py-36 bg-navy-dark">
+    <section class="py-24 lg:py-36 bg-white">
       <div class="max-w-5xl mx-auto px-6 lg:px-12">
         <div class="reveal mb-16">
           <div class="section-label">
@@ -314,7 +313,7 @@
           <!-- Value 1: Integridad -->
           <div class="value-item reveal">
             <div class="value-icon">
-              <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <svg class="w-6 h-6 text-ensign" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
               </svg>
             </div>
@@ -333,7 +332,7 @@
           <!-- Value 2: Excelencia -->
           <div class="value-item reveal">
             <div class="value-icon">
-              <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <svg class="w-6 h-6 text-ensign" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/>
               </svg>
             </div>
@@ -352,7 +351,7 @@
           <!-- Value 3: Compromiso con el Cliente -->
           <div class="value-item reveal" style="border-bottom:none;">
             <div class="value-icon">
-              <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <svg class="w-6 h-6 text-ensign" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
               </svg>
             </div>
@@ -376,15 +375,15 @@
       <div class="cta-banner__bg-text" data-lang="es">MEDJUR</div>
       <div class="cta-banner__bg-text hidden" data-lang="en">MEDJUR</div>
       <div class="cta-banner__content max-w-4xl mx-auto px-6 lg:px-12 text-center">
-        <h2 class="font-heading font-extrabold text-[clamp(2rem,5vw,3.5rem)] text-navy-dark mb-6 reveal">
+        <h2 class="font-heading font-extrabold text-[clamp(2rem,5vw,3.5rem)] text-white mb-6 reveal">
           <span data-lang="es">Su historia merece respaldo legal.</span>
           <span data-lang="en" class="hidden">Your story deserves legal backing.</span>
         </h2>
-        <p class="text-navy-dark/70 text-lg mb-10 max-w-2xl mx-auto reveal">
+        <p class="text-white/70 text-lg mb-10 max-w-2xl mx-auto reveal">
           <span data-lang="es">Ya conoce qui&eacute;nes somos. Ahora perm&iacute;tanos conocer su empresa. 30 minutos, sin costo, sin compromiso.</span>
           <span data-lang="en" class="hidden">Now you know who we are. Let us get to know your business. 30 minutes, no cost, no obligation.</span>
         </p>
-        <a href="contacto.html" class="btn-primary !bg-navy-dark !text-gold reveal">
+        <a href="contacto.html" class="btn-primary !bg-white !text-ensign reveal">
           <span data-lang="es">Quiero Mi Consulta Gratis</span>
           <span data-lang="en" class="hidden">I Want My Free Consult</span>
           <span class="btn-arrow">&rarr;</span>
@@ -395,7 +394,7 @@
   </main>
 
   <!-- ========== FOOTER ========== -->
-  <footer class="site-footer bg-navy-dark pt-20 pb-10">
+  <footer class="site-footer bg-ensign-dark pt-20 pb-10">
     <div class="max-w-7xl mx-auto px-6 lg:px-12">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-16">
         <!-- Col 1 -->
@@ -409,47 +408,47 @@
 
         <!-- Col 2 -->
         <div>
-          <h4 class="font-heading font-bold text-[0.7rem] uppercase tracking-[0.2em] text-gold mb-6">
+          <h4 class="font-heading font-bold text-[0.7rem] uppercase tracking-[0.2em] text-white/60 mb-6">
             <span data-lang="es">Navegaci&oacute;n</span><span data-lang="en" class="hidden">Navigation</span>
           </h4>
           <ul class="space-y-4">
-            <li><a href="index.html" class="text-white/40 hover:text-gold text-sm transition-colors"><span data-lang="es">Inicio</span><span data-lang="en" class="hidden">Home</span></a></li>
-            <li><a href="nosotros.html" class="text-white/40 hover:text-gold text-sm transition-colors"><span data-lang="es">Nosotros</span><span data-lang="en" class="hidden">About</span></a></li>
-            <li><a href="servicios.html" class="text-white/40 hover:text-gold text-sm transition-colors"><span data-lang="es">Servicios</span><span data-lang="en" class="hidden">Services</span></a></li>
-            <li><a href="contacto.html" class="text-white/40 hover:text-gold text-sm transition-colors"><span data-lang="es">Contacto</span><span data-lang="en" class="hidden">Contact</span></a></li>
+            <li><a href="index.html" class="text-white/40 hover:text-white text-sm transition-colors"><span data-lang="es">Inicio</span><span data-lang="en" class="hidden">Home</span></a></li>
+            <li><a href="nosotros.html" class="text-white/40 hover:text-white text-sm transition-colors"><span data-lang="es">Nosotros</span><span data-lang="en" class="hidden">About</span></a></li>
+            <li><a href="servicios.html" class="text-white/40 hover:text-white text-sm transition-colors"><span data-lang="es">Servicios</span><span data-lang="en" class="hidden">Services</span></a></li>
+            <li><a href="contacto.html" class="text-white/40 hover:text-white text-sm transition-colors"><span data-lang="es">Contacto</span><span data-lang="en" class="hidden">Contact</span></a></li>
           </ul>
         </div>
 
         <!-- Col 3 -->
         <div>
-          <h4 class="font-heading font-bold text-[0.7rem] uppercase tracking-[0.2em] text-gold mb-6">
+          <h4 class="font-heading font-bold text-[0.7rem] uppercase tracking-[0.2em] text-white/60 mb-6">
             <span data-lang="es">Servicios</span><span data-lang="en" class="hidden">Services</span>
           </h4>
           <ul class="space-y-4">
-            <li><a href="servicios.html#constitucion" class="text-white/40 hover:text-gold text-sm transition-colors"><span data-lang="es">Constituci&oacute;n de Empresas</span><span data-lang="en" class="hidden">Company Formation</span></a></li>
-            <li><a href="servicios.html#contratos" class="text-white/40 hover:text-gold text-sm transition-colors"><span data-lang="es">Contratos Comerciales</span><span data-lang="en" class="hidden">Commercial Contracts</span></a></li>
-            <li><a href="servicios.html#cumplimiento" class="text-white/40 hover:text-gold text-sm transition-colors"><span data-lang="es">Cumplimiento Normativo</span><span data-lang="en" class="hidden">Regulatory Compliance</span></a></li>
+            <li><a href="servicios.html#constitucion" class="text-white/40 hover:text-white text-sm transition-colors"><span data-lang="es">Constituci&oacute;n de Empresas</span><span data-lang="en" class="hidden">Company Formation</span></a></li>
+            <li><a href="servicios.html#contratos" class="text-white/40 hover:text-white text-sm transition-colors"><span data-lang="es">Contratos Comerciales</span><span data-lang="en" class="hidden">Commercial Contracts</span></a></li>
+            <li><a href="servicios.html#cumplimiento" class="text-white/40 hover:text-white text-sm transition-colors"><span data-lang="es">Cumplimiento Normativo</span><span data-lang="en" class="hidden">Regulatory Compliance</span></a></li>
           </ul>
         </div>
 
         <!-- Col 4 -->
         <div>
-          <h4 class="font-heading font-bold text-[0.7rem] uppercase tracking-[0.2em] text-gold mb-6">
+          <h4 class="font-heading font-bold text-[0.7rem] uppercase tracking-[0.2em] text-white/60 mb-6">
             <span data-lang="es">Contacto</span><span data-lang="en" class="hidden">Contact</span>
           </h4>
           <ul class="space-y-4 text-white/40 text-sm">
             <li>Zona R&iacute;o, Tijuana, B.C., M&eacute;xico</li>
-            <li><a href="tel:+526641234567" class="hover:text-gold transition-colors">+52 (664) 123-4567</a></li>
-            <li><a href="mailto:contacto@medjur.org" class="hover:text-gold transition-colors">contacto@medjur.org</a></li>
+            <li><a href="tel:+526641234567" class="hover:text-white transition-colors">+52 (664) 123-4567</a></li>
+            <li><a href="mailto:contacto@medjur.org" class="hover:text-white transition-colors">contacto@medjur.org</a></li>
           </ul>
           <div class="flex gap-4 mt-6">
-            <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center hover:border-gold hover:text-gold transition-all text-white/40" aria-label="Facebook">
+            <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center hover:border-white hover:text-white transition-all text-white/40" aria-label="Facebook">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
             </a>
-            <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center hover:border-gold hover:text-gold transition-all text-white/40" aria-label="LinkedIn">
+            <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center hover:border-white hover:text-white transition-all text-white/40" aria-label="LinkedIn">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
             </a>
-            <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center hover:border-gold hover:text-gold transition-all text-white/40" aria-label="Instagram">
+            <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center hover:border-white hover:text-white transition-all text-white/40" aria-label="Instagram">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
             </a>
           </div>

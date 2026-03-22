@@ -27,10 +27,9 @@
       theme: {
         extend: {
           colors: {
-            navy: { DEFAULT: '#1b2a4a', dark: '#0a1628', mid: '#0d1b3e', light: '#2a3f6a' },
-            silver: { DEFAULT: '#8c9bb5', light: '#a0aec0' },
-            gold: { DEFAULT: '#c9a84c', light: '#e0c97f' },
-            surface: '#f8f9fa',
+            ensign: { DEFAULT: '#1B3A5C', dark: '#122840', mid: '#163050', light: '#2a5580' },
+            oxford: { DEFAULT: '#3C3F41', light: '#5a5d60' },
+            surface: '#f5f6f8',
           },
           fontFamily: {
             heading: ['Montserrat', 'sans-serif'],
@@ -44,7 +43,7 @@
 
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="font-body bg-navy-dark text-white antialiased">
+<body class="font-body bg-white text-oxford antialiased">
 
   <!-- Cursor Glow -->
   <div class="cursor-glow"></div>
@@ -91,7 +90,7 @@
       </div>
 
       <!-- Mobile Hamburger -->
-      <button class="mobile-menu-btn lg:hidden text-white p-2" aria-label="Open menu" aria-expanded="false">
+      <button class="mobile-menu-btn lg:hidden p-2" aria-label="Open menu" aria-expanded="false">
         <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5"/>
         </svg>
@@ -107,7 +106,7 @@
     <a href="nosotros.html"><span data-lang="es">Nosotros</span><span data-lang="en" class="hidden">About</span></a>
     <a href="servicios.html"><span data-lang="es">Servicios</span><span data-lang="en" class="hidden">Services</span></a>
     <a href="contacto.html"><span data-lang="es">Contacto</span><span data-lang="en" class="hidden">Contact</span></a>
-    <div class="mt-8 pt-8 border-t border-gold/10">
+    <div class="mt-8 pt-8 border-t border-ensign/10">
       <div class="lang-toggle mb-8">
         <button class="lang-btn active" data-lang-btn="es">ES</button>
         <button class="lang-btn" data-lang-btn="en">EN</button>
@@ -180,7 +179,7 @@
     </section>
 
     <!-- ===== SERVICE 1: COMPANY FORMATION ===== -->
-    <section id="constitucion" class="py-24 lg:py-36 bg-navy-dark">
+    <section id="constitucion" class="py-24 lg:py-36 bg-white">
       <div class="max-w-7xl mx-auto px-6 lg:px-12">
 
         <!-- Section Header -->
@@ -200,11 +199,11 @@
               <span data-lang="es">Constitución de Empresas</span>
               <span data-lang="en" class="hidden">Company Formation</span>
             </h2>
-            <p class="text-white/50 text-lg leading-relaxed mb-8">
+            <p class="text-oxford/70 text-lg leading-relaxed mb-8">
               <span data-lang="es">No solo llenamos formularios. <em class="text-em">Arquitectamos la estructura de su negocio.</em> Cada decisión legal se toma pensando en su crecimiento a 5, 10 y 20 años.</span>
               <span data-lang="en" class="hidden">We don't just file paperwork. <em class="text-em">We architect your business structure.</em> Every legal decision is made with your 5-, 10-, and 20-year growth in mind.</span>
             </p>
-            <p class="text-white/40 text-base leading-relaxed mb-10">
+            <p class="text-oxford-light text-base leading-relaxed mb-10">
               <span data-lang="es">Usted se enfoca en su visión. Nosotros nos encargamos de que su empresa nazca con las bases legales correctas: acta constitutiva, RFC, IMSS, cuenta bancaria corporativa y todo lo que necesita para operar desde el día uno.</span>
               <span data-lang="en" class="hidden">You focus on your vision. We make sure your company is born with the right legal foundations: articles of incorporation, tax ID, social security registration, corporate bank account, and everything you need to operate from day one.</span>
             </p>
@@ -217,57 +216,57 @@
 
           <!-- Right: Dark Card with Inclusions -->
           <div class="lg:col-span-7 reveal">
-            <div class="bg-navy-mid border border-gold/10 p-8 lg:p-10">
-              <h3 class="font-heading font-bold text-[0.7rem] uppercase tracking-[0.2em] text-gold mb-8">
+            <div class="bg-surface border border-ensign/10 p-8 lg:p-10">
+              <h3 class="font-heading font-bold text-[0.7rem] uppercase tracking-[0.2em] text-ensign mb-8">
                 <span data-lang="es">Qué incluye</span>
                 <span data-lang="en" class="hidden">What's included</span>
               </h3>
               <ul class="space-y-5">
                 <li class="flex items-start gap-4">
-                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                  <span class="text-white/70">
+                  <svg class="w-5 h-5 text-ensign flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                  <span class="text-oxford/70">
                     <span data-lang="es">Asesoría en elección de tipo societario (SA de CV, S de RL, SAS, SC)</span>
                     <span data-lang="en" class="hidden">Advisory on entity type selection (SA de CV, S de RL, SAS, SC)</span>
                   </span>
                 </li>
                 <li class="flex items-start gap-4">
-                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                  <span class="text-white/70">
+                  <svg class="w-5 h-5 text-ensign flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                  <span class="text-oxford/70">
                     <span data-lang="es">Redacción del acta constitutiva y estatutos sociales</span>
                     <span data-lang="en" class="hidden">Drafting of articles of incorporation and bylaws</span>
                   </span>
                 </li>
                 <li class="flex items-start gap-4">
-                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                  <span class="text-white/70">
+                  <svg class="w-5 h-5 text-ensign flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                  <span class="text-oxford/70">
                     <span data-lang="es">Inscripción ante el Registro Público de Comercio</span>
                     <span data-lang="en" class="hidden">Registration with the Public Registry of Commerce</span>
                   </span>
                 </li>
                 <li class="flex items-start gap-4">
-                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                  <span class="text-white/70">
+                  <svg class="w-5 h-5 text-ensign flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                  <span class="text-oxford/70">
                     <span data-lang="es">Obtención de RFC y firma electrónica (e.firma)</span>
                     <span data-lang="en" class="hidden">Tax ID (RFC) and electronic signature (e.firma) registration</span>
                   </span>
                 </li>
                 <li class="flex items-start gap-4">
-                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                  <span class="text-white/70">
+                  <svg class="w-5 h-5 text-ensign flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                  <span class="text-oxford/70">
                     <span data-lang="es">Alta ante el IMSS e INFONAVIT</span>
                     <span data-lang="en" class="hidden">Social security (IMSS) and INFONAVIT registration</span>
                   </span>
                 </li>
                 <li class="flex items-start gap-4">
-                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                  <span class="text-white/70">
+                  <svg class="w-5 h-5 text-ensign flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                  <span class="text-oxford/70">
                     <span data-lang="es">Apertura de cuenta bancaria corporativa</span>
                     <span data-lang="en" class="hidden">Corporate bank account opening</span>
                   </span>
                 </li>
                 <li class="flex items-start gap-4">
-                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                  <span class="text-white/70">
+                  <svg class="w-5 h-5 text-ensign flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                  <span class="text-oxford/70">
                     <span data-lang="es">Poderes notariales y actas de asamblea iniciales</span>
                     <span data-lang="en" class="hidden">Powers of attorney and initial assembly minutes</span>
                   </span>
@@ -279,39 +278,39 @@
 
         <!-- Entity Type Cards -->
         <div class="mt-16 reveal">
-          <h3 class="font-heading font-bold text-[0.7rem] uppercase tracking-[0.2em] text-gold mb-8">
+          <h3 class="font-heading font-bold text-[0.7rem] uppercase tracking-[0.2em] text-ensign mb-8">
             <span data-lang="es">Tipos de Sociedad</span>
             <span data-lang="en" class="hidden">Entity Types</span>
           </h3>
           <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <!-- SA de CV -->
-            <div class="bg-navy-mid border-l-2 border-gold p-6">
-              <h4 class="font-heading font-bold text-white text-lg mb-2">SA de CV</h4>
-              <p class="text-white/40 text-sm leading-relaxed">
+            <div class="bg-surface border-l-2 border-ensign p-6">
+              <h4 class="font-heading font-bold text-oxford text-lg mb-2">SA de CV</h4>
+              <p class="text-oxford-light text-sm leading-relaxed">
                 <span data-lang="es">Sociedad Anónima de Capital Variable. La más común para medianas y grandes empresas con múltiples socios.</span>
                 <span data-lang="en" class="hidden">Corporation with Variable Capital. The most common structure for mid-size and large businesses with multiple shareholders.</span>
               </p>
             </div>
             <!-- S de RL de CV -->
-            <div class="bg-navy-mid border-l-2 border-gold p-6">
-              <h4 class="font-heading font-bold text-white text-lg mb-2">S de RL de CV</h4>
-              <p class="text-white/40 text-sm leading-relaxed">
+            <div class="bg-surface border-l-2 border-ensign p-6">
+              <h4 class="font-heading font-bold text-oxford text-lg mb-2">S de RL de CV</h4>
+              <p class="text-oxford-light text-sm leading-relaxed">
                 <span data-lang="es">Sociedad de Responsabilidad Limitada. Ideal para empresas familiares o con pocos socios que buscan protección patrimonial.</span>
                 <span data-lang="en" class="hidden">Limited Liability Company. Ideal for family businesses or ventures with few partners seeking asset protection.</span>
               </p>
             </div>
             <!-- SAS -->
-            <div class="bg-navy-mid border-l-2 border-gold p-6">
-              <h4 class="font-heading font-bold text-white text-lg mb-2">SAS</h4>
-              <p class="text-white/40 text-sm leading-relaxed">
+            <div class="bg-surface border-l-2 border-ensign p-6">
+              <h4 class="font-heading font-bold text-oxford text-lg mb-2">SAS</h4>
+              <p class="text-oxford-light text-sm leading-relaxed">
                 <span data-lang="es">Sociedad por Acciones Simplificada. Constitución rápida y digital, perfecta para emprendedores y startups.</span>
                 <span data-lang="en" class="hidden">Simplified Stock Corporation. Fast, digital formation — perfect for entrepreneurs and startups.</span>
               </p>
             </div>
             <!-- SC -->
-            <div class="bg-navy-mid border-l-2 border-gold p-6">
-              <h4 class="font-heading font-bold text-white text-lg mb-2">SC</h4>
-              <p class="text-white/40 text-sm leading-relaxed">
+            <div class="bg-surface border-l-2 border-ensign p-6">
+              <h4 class="font-heading font-bold text-oxford text-lg mb-2">SC</h4>
+              <p class="text-oxford-light text-sm leading-relaxed">
                 <span data-lang="es">Sociedad Civil. Para profesionistas independientes, despachos y firmas de servicios profesionales.</span>
                 <span data-lang="en" class="hidden">Civil Partnership. For independent professionals, firms, and professional service practices.</span>
               </p>
@@ -322,7 +321,7 @@
     </section>
 
     <!-- ===== SERVICE 2: CONTRACTS & COMPLIANCE ===== -->
-    <section id="contratos" class="py-24 lg:py-36 bg-navy-dark border-t border-white/5">
+    <section id="contratos" class="py-24 lg:py-36 bg-surface border-t border-ensign/5">
       <div class="max-w-7xl mx-auto px-6 lg:px-12">
 
         <!-- Section Header -->
@@ -338,64 +337,64 @@
 
           <!-- Left: Dark Card with Contract Types -->
           <div class="lg:col-span-7 order-2 lg:order-1 reveal">
-            <div class="bg-navy-mid border border-gold/10 p-8 lg:p-10">
-              <h3 class="font-heading font-bold text-[0.7rem] uppercase tracking-[0.2em] text-gold mb-8">
+            <div class="bg-white border border-ensign/10 p-8 lg:p-10">
+              <h3 class="font-heading font-bold text-[0.7rem] uppercase tracking-[0.2em] text-ensign mb-8">
                 <span data-lang="es">Tipos de Contrato</span>
                 <span data-lang="en" class="hidden">Contract Types</span>
               </h3>
               <div class="grid sm:grid-cols-2 gap-4">
                 <div class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                  <span class="text-white/70">
+                  <svg class="w-5 h-5 text-ensign flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                  <span class="text-oxford/70">
                     <span data-lang="es">Compraventa</span>
                     <span data-lang="en" class="hidden">Purchase & Sale</span>
                   </span>
                 </div>
                 <div class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                  <span class="text-white/70">
+                  <svg class="w-5 h-5 text-ensign flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                  <span class="text-oxford/70">
                     <span data-lang="es">Arrendamiento</span>
                     <span data-lang="en" class="hidden">Lease Agreements</span>
                   </span>
                 </div>
                 <div class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                  <span class="text-white/70">
+                  <svg class="w-5 h-5 text-ensign flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                  <span class="text-oxford/70">
                     <span data-lang="es">Prestación de Servicios</span>
                     <span data-lang="en" class="hidden">Service Agreements</span>
                   </span>
                 </div>
                 <div class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                  <span class="text-white/70">
+                  <svg class="w-5 h-5 text-ensign flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                  <span class="text-oxford/70">
                     <span data-lang="es">NDA (Confidencialidad)</span>
                     <span data-lang="en" class="hidden">NDA (Confidentiality)</span>
                   </span>
                 </div>
                 <div class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                  <span class="text-white/70">
+                  <svg class="w-5 h-5 text-ensign flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                  <span class="text-oxford/70">
                     <span data-lang="es">Joint Venture</span>
                     <span data-lang="en" class="hidden">Joint Venture</span>
                   </span>
                 </div>
                 <div class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                  <span class="text-white/70">
+                  <svg class="w-5 h-5 text-ensign flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                  <span class="text-oxford/70">
                     <span data-lang="es">Distribución</span>
                     <span data-lang="en" class="hidden">Distribution</span>
                   </span>
                 </div>
                 <div class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                  <span class="text-white/70">
+                  <svg class="w-5 h-5 text-ensign flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                  <span class="text-oxford/70">
                     <span data-lang="es">Franquicia</span>
                     <span data-lang="en" class="hidden">Franchise</span>
                   </span>
                 </div>
                 <div class="flex items-start gap-3">
-                  <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                  <span class="text-white/70">
+                  <svg class="w-5 h-5 text-ensign flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                  <span class="text-oxford/70">
                     <span data-lang="es">Laborales</span>
                     <span data-lang="en" class="hidden">Employment</span>
                   </span>
@@ -410,11 +409,11 @@
               <span data-lang="es">Contratos Comerciales</span>
               <span data-lang="en" class="hidden">Commercial Contracts</span>
             </h2>
-            <p class="text-white/50 text-lg leading-relaxed mb-8">
+            <p class="text-oxford/70 text-lg leading-relaxed mb-8">
               <span data-lang="es">Un contrato genérico descargado de internet no lo va a proteger. <em class="text-em">Los nuestros sí.</em> Cada cláusula está diseñada para blindar sus intereses en el contexto legal mexicano.</span>
               <span data-lang="en" class="hidden">A generic contract downloaded from the internet won't protect you. <em class="text-em">Ours will.</em> Every clause is designed to shield your interests within the Mexican legal framework.</span>
             </p>
-            <p class="text-white/40 text-base leading-relaxed mb-10">
+            <p class="text-oxford-light text-base leading-relaxed mb-10">
               <span data-lang="es">Redactamos, revisamos y negociamos contratos que realmente funcionan. Bilingües cuando su negocio lo requiere. Siempre a la medida de su operación.</span>
               <span data-lang="en" class="hidden">We draft, review, and negotiate contracts that actually work. Bilingual when your business requires it. Always tailored to your operation.</span>
             </p>
@@ -434,69 +433,69 @@
                 <span data-lang="es">Cumplimiento Normativo</span>
                 <span data-lang="en" class="hidden">Regulatory Compliance</span>
               </h3>
-              <p class="text-white/50 text-lg leading-relaxed">
+              <p class="text-oxford/70 text-lg leading-relaxed">
                 <span data-lang="es">Las multas y sanciones no avisan. Nosotros nos aseguramos de que su empresa cumpla con todas las obligaciones legales, fiscales y laborales <em class="text-em">antes de que sea un problema.</em></span>
                 <span data-lang="en" class="hidden">Fines and penalties don't send warnings. We make sure your business meets every legal, tax, and labor obligation <em class="text-em">before it becomes a problem.</em></span>
               </p>
             </div>
             <div class="lg:col-span-7">
-              <div class="bg-navy-mid border border-gold/10 p-8 lg:p-10">
-                <h4 class="font-heading font-bold text-[0.7rem] uppercase tracking-[0.2em] text-gold mb-8">
+              <div class="bg-white border border-ensign/10 p-8 lg:p-10">
+                <h4 class="font-heading font-bold text-[0.7rem] uppercase tracking-[0.2em] text-ensign mb-8">
                   <span data-lang="es">Áreas de Cumplimiento</span>
                   <span data-lang="en" class="hidden">Compliance Areas</span>
                 </h4>
                 <ul class="space-y-5">
                   <li class="flex items-start gap-4">
-                    <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                    <svg class="w-5 h-5 text-ensign flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
                     <div>
-                      <span class="text-white font-medium">SAT</span>
-                      <span class="text-white/50 ml-2">
+                      <span class="text-oxford font-medium">SAT</span>
+                      <span class="text-oxford-light ml-2">
                         <span data-lang="es">— Obligaciones fiscales federales y facturación electrónica</span>
                         <span data-lang="en" class="hidden">— Federal tax obligations and electronic invoicing</span>
                       </span>
                     </div>
                   </li>
                   <li class="flex items-start gap-4">
-                    <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                    <svg class="w-5 h-5 text-ensign flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
                     <div>
-                      <span class="text-white font-medium">LFT</span>
-                      <span class="text-white/50 ml-2">
+                      <span class="text-oxford font-medium">LFT</span>
+                      <span class="text-oxford-light ml-2">
                         <span data-lang="es">— Ley Federal del Trabajo: contratos laborales, NOM-035, políticas internas</span>
                         <span data-lang="en" class="hidden">— Federal Labor Law: employment contracts, NOM-035, internal policies</span>
                       </span>
                     </div>
                   </li>
                   <li class="flex items-start gap-4">
-                    <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                    <svg class="w-5 h-5 text-ensign flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
                     <div>
-                      <span class="text-white font-medium">LFPDPPP</span>
-                      <span class="text-white/50 ml-2">
+                      <span class="text-oxford font-medium">LFPDPPP</span>
+                      <span class="text-oxford-light ml-2">
                         <span data-lang="es">— Protección de datos personales y avisos de privacidad</span>
                         <span data-lang="en" class="hidden">— Personal data protection and privacy notices</span>
                       </span>
                     </div>
                   </li>
                   <li class="flex items-start gap-4">
-                    <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                    <svg class="w-5 h-5 text-ensign flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
                     <div>
-                      <span class="text-white font-medium">
+                      <span class="text-oxford font-medium">
                         <span data-lang="es">Permisos Municipales</span>
                         <span data-lang="en" class="hidden">Municipal Permits</span>
                       </span>
-                      <span class="text-white/50 ml-2">
+                      <span class="text-oxford-light ml-2">
                         <span data-lang="es">— Licencias de funcionamiento y uso de suelo en Tijuana</span>
                         <span data-lang="en" class="hidden">— Operating licenses and land-use permits in Tijuana</span>
                       </span>
                     </div>
                   </li>
                   <li class="flex items-start gap-4">
-                    <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                    <svg class="w-5 h-5 text-ensign flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
                     <div>
-                      <span class="text-white font-medium">
+                      <span class="text-oxford font-medium">
                         <span data-lang="es">Antilavado</span>
                         <span data-lang="en" class="hidden">Anti-Money Laundering</span>
                       </span>
-                      <span class="text-white/50 ml-2">
+                      <span class="text-oxford-light ml-2">
                         <span data-lang="es">— Prevención de lavado de dinero y cumplimiento LFPIORPI</span>
                         <span data-lang="en" class="hidden">— Money laundering prevention and LFPIORPI compliance</span>
                       </span>
@@ -512,7 +511,7 @@
     </section>
 
     <!-- ===== PROCESS TIMELINE ===== -->
-    <section class="py-24 lg:py-36 bg-navy-dark border-t border-white/5">
+    <section class="py-24 lg:py-36 bg-white border-t border-ensign/5">
       <div class="max-w-5xl mx-auto px-6 lg:px-12">
 
         <div class="reveal mb-16">
@@ -531,11 +530,11 @@
           <div class="process-step reveal" data-step="1">
             <div class="process-step__number">01</div>
             <div class="process-step__content">
-              <h3 class="font-heading font-bold text-xl text-white mb-3">
+              <h3 class="font-heading font-bold text-xl text-oxford mb-3">
                 <span data-lang="es">Consulta Inicial</span>
                 <span data-lang="en" class="hidden">Initial Consultation</span>
               </h3>
-              <p class="text-white/50 leading-relaxed">
+              <p class="text-oxford-light leading-relaxed">
                 <span data-lang="es">30 minutos sin costo. Usted nos cuenta su situación, nosotros le decimos exactamente qué necesita y cuánto cuesta. Sin letra chiquita, sin compromisos.</span>
                 <span data-lang="en" class="hidden">30 minutes, no cost. You tell us your situation, we tell you exactly what you need and what it costs. No fine print, no strings attached.</span>
               </p>
@@ -546,11 +545,11 @@
           <div class="process-step reveal" data-step="2">
             <div class="process-step__number">02</div>
             <div class="process-step__content">
-              <h3 class="font-heading font-bold text-xl text-white mb-3">
+              <h3 class="font-heading font-bold text-xl text-oxford mb-3">
                 <span data-lang="es">Análisis y Estrategia</span>
                 <span data-lang="en" class="hidden">Analysis & Strategy</span>
               </h3>
-              <p class="text-white/50 leading-relaxed">
+              <p class="text-oxford-light leading-relaxed">
                 <span data-lang="es">Estudiamos su caso a fondo. Identificamos riesgos, oportunidades y le presentamos una estrategia legal clara y personalizada.</span>
                 <span data-lang="en" class="hidden">We study your case in depth. We identify risks, opportunities, and present you with a clear, personalized legal strategy.</span>
               </p>
@@ -561,11 +560,11 @@
           <div class="process-step reveal" data-step="3">
             <div class="process-step__number">03</div>
             <div class="process-step__content">
-              <h3 class="font-heading font-bold text-xl text-white mb-3">
+              <h3 class="font-heading font-bold text-xl text-oxford mb-3">
                 <span data-lang="es">Ejecución</span>
                 <span data-lang="en" class="hidden">Execution</span>
               </h3>
-              <p class="text-white/50 leading-relaxed">
+              <p class="text-oxford-light leading-relaxed">
                 <span data-lang="es">Nos encargamos de todo: redacción, trámites, gestiones ante autoridades. Usted recibe actualizaciones constantes sin tener que perseguirnos.</span>
                 <span data-lang="en" class="hidden">We handle everything: drafting, filings, dealings with authorities. You receive constant updates without having to chase us.</span>
               </p>
@@ -576,11 +575,11 @@
           <div class="process-step reveal" data-step="4">
             <div class="process-step__number">04</div>
             <div class="process-step__content">
-              <h3 class="font-heading font-bold text-xl text-white mb-3">
+              <h3 class="font-heading font-bold text-xl text-oxford mb-3">
                 <span data-lang="es">Seguimiento Continuo</span>
                 <span data-lang="en" class="hidden">Ongoing Support</span>
               </h3>
-              <p class="text-white/50 leading-relaxed">
+              <p class="text-oxford-light leading-relaxed">
                 <span data-lang="es">Su empresa evoluciona, y su protección legal también debe hacerlo. Nos mantenemos a su lado para actualizar contratos, resolver dudas y anticipar cambios regulatorios.</span>
                 <span data-lang="en" class="hidden">Your business evolves, and so should your legal protection. We stay by your side to update contracts, answer questions, and anticipate regulatory changes.</span>
               </p>
@@ -592,7 +591,7 @@
     </section>
 
     <!-- ===== TEXT MARQUEE ===== -->
-    <div class="text-marquee bg-navy-dark">
+    <div class="text-marquee bg-surface">
       <div class="text-marquee__content">
         <span>Constitución</span>
         <span class="text-marquee__fill">&bull;</span>
@@ -622,15 +621,15 @@
       <div class="cta-banner__bg-text" data-lang="es">MEDJUR</div>
       <div class="cta-banner__bg-text hidden" data-lang="en">MEDJUR</div>
       <div class="cta-banner__content max-w-4xl mx-auto px-6 lg:px-12 text-center">
-        <h2 class="font-heading font-extrabold text-[clamp(2rem,5vw,3.5rem)] text-navy-dark mb-6 reveal">
+        <h2 class="font-heading font-extrabold text-[clamp(2rem,5vw,3.5rem)] text-white mb-6 reveal">
           <span data-lang="es">Cada día sin protección legal es un riesgo que usted no debería correr.</span>
           <span data-lang="en" class="hidden">Every day without legal protection is a risk you shouldn't be taking.</span>
         </h2>
-        <p class="text-navy-dark/70 text-lg mb-10 max-w-2xl mx-auto reveal">
+        <p class="text-white/70 text-lg mb-10 max-w-2xl mx-auto reveal">
           <span data-lang="es">30 minutos. Sin costo. Sin compromiso. Hablemos de cómo blindar su empresa hoy mismo.</span>
           <span data-lang="en" class="hidden">30 minutes. No cost. No obligation. Let's talk about how to shield your business today.</span>
         </p>
-        <a href="contacto.html" class="btn-primary !bg-navy-dark !text-gold reveal">
+        <a href="contacto.html" class="btn-primary !bg-white !text-ensign reveal">
           <span data-lang="es">Quiero Mi Consulta Gratis</span>
           <span data-lang="en" class="hidden">I Want My Free Consult</span>
           <span class="btn-arrow">&rarr;</span>
@@ -641,7 +640,7 @@
   </main>
 
   <!-- ========== FOOTER ========== -->
-  <footer class="site-footer bg-navy-dark pt-20 pb-10">
+  <footer class="site-footer bg-ensign-dark pt-20 pb-10">
     <div class="max-w-7xl mx-auto px-6 lg:px-12">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-16">
         <!-- Col 1 -->
@@ -655,47 +654,47 @@
 
         <!-- Col 2 -->
         <div>
-          <h4 class="font-heading font-bold text-[0.7rem] uppercase tracking-[0.2em] text-gold mb-6">
+          <h4 class="font-heading font-bold text-[0.7rem] uppercase tracking-[0.2em] text-white/60 mb-6">
             <span data-lang="es">Navegación</span><span data-lang="en" class="hidden">Navigation</span>
           </h4>
           <ul class="space-y-4">
-            <li><a href="index.html" class="text-white/40 hover:text-gold text-sm transition-colors"><span data-lang="es">Inicio</span><span data-lang="en" class="hidden">Home</span></a></li>
-            <li><a href="nosotros.html" class="text-white/40 hover:text-gold text-sm transition-colors"><span data-lang="es">Nosotros</span><span data-lang="en" class="hidden">About</span></a></li>
-            <li><a href="servicios.html" class="text-white/40 hover:text-gold text-sm transition-colors"><span data-lang="es">Servicios</span><span data-lang="en" class="hidden">Services</span></a></li>
-            <li><a href="contacto.html" class="text-white/40 hover:text-gold text-sm transition-colors"><span data-lang="es">Contacto</span><span data-lang="en" class="hidden">Contact</span></a></li>
+            <li><a href="index.html" class="text-white/40 hover:text-white text-sm transition-colors"><span data-lang="es">Inicio</span><span data-lang="en" class="hidden">Home</span></a></li>
+            <li><a href="nosotros.html" class="text-white/40 hover:text-white text-sm transition-colors"><span data-lang="es">Nosotros</span><span data-lang="en" class="hidden">About</span></a></li>
+            <li><a href="servicios.html" class="text-white/40 hover:text-white text-sm transition-colors"><span data-lang="es">Servicios</span><span data-lang="en" class="hidden">Services</span></a></li>
+            <li><a href="contacto.html" class="text-white/40 hover:text-white text-sm transition-colors"><span data-lang="es">Contacto</span><span data-lang="en" class="hidden">Contact</span></a></li>
           </ul>
         </div>
 
         <!-- Col 3 -->
         <div>
-          <h4 class="font-heading font-bold text-[0.7rem] uppercase tracking-[0.2em] text-gold mb-6">
+          <h4 class="font-heading font-bold text-[0.7rem] uppercase tracking-[0.2em] text-white/60 mb-6">
             <span data-lang="es">Servicios</span><span data-lang="en" class="hidden">Services</span>
           </h4>
           <ul class="space-y-4">
-            <li><a href="servicios.html#constitucion" class="text-white/40 hover:text-gold text-sm transition-colors"><span data-lang="es">Constitución de Empresas</span><span data-lang="en" class="hidden">Company Formation</span></a></li>
-            <li><a href="servicios.html#contratos" class="text-white/40 hover:text-gold text-sm transition-colors"><span data-lang="es">Contratos Comerciales</span><span data-lang="en" class="hidden">Commercial Contracts</span></a></li>
-            <li><a href="servicios.html#cumplimiento" class="text-white/40 hover:text-gold text-sm transition-colors"><span data-lang="es">Cumplimiento Normativo</span><span data-lang="en" class="hidden">Regulatory Compliance</span></a></li>
+            <li><a href="servicios.html#constitucion" class="text-white/40 hover:text-white text-sm transition-colors"><span data-lang="es">Constitución de Empresas</span><span data-lang="en" class="hidden">Company Formation</span></a></li>
+            <li><a href="servicios.html#contratos" class="text-white/40 hover:text-white text-sm transition-colors"><span data-lang="es">Contratos Comerciales</span><span data-lang="en" class="hidden">Commercial Contracts</span></a></li>
+            <li><a href="servicios.html#cumplimiento" class="text-white/40 hover:text-white text-sm transition-colors"><span data-lang="es">Cumplimiento Normativo</span><span data-lang="en" class="hidden">Regulatory Compliance</span></a></li>
           </ul>
         </div>
 
         <!-- Col 4 -->
         <div>
-          <h4 class="font-heading font-bold text-[0.7rem] uppercase tracking-[0.2em] text-gold mb-6">
+          <h4 class="font-heading font-bold text-[0.7rem] uppercase tracking-[0.2em] text-white/60 mb-6">
             <span data-lang="es">Contacto</span><span data-lang="en" class="hidden">Contact</span>
           </h4>
           <ul class="space-y-4 text-white/40 text-sm">
             <li>Zona Río, Tijuana, B.C., México</li>
-            <li><a href="tel:+526641234567" class="hover:text-gold transition-colors">+52 (664) 123-4567</a></li>
-            <li><a href="mailto:contacto@medjur.org" class="hover:text-gold transition-colors">contacto@medjur.org</a></li>
+            <li><a href="tel:+526641234567" class="hover:text-white transition-colors">+52 (664) 123-4567</a></li>
+            <li><a href="mailto:contacto@medjur.org" class="hover:text-white transition-colors">contacto@medjur.org</a></li>
           </ul>
           <div class="flex gap-4 mt-6">
-            <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center hover:border-gold hover:text-gold transition-all text-white/40" aria-label="Facebook">
+            <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center hover:border-white hover:text-white transition-all text-white/40" aria-label="Facebook">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
             </a>
-            <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center hover:border-gold hover:text-gold transition-all text-white/40" aria-label="LinkedIn">
+            <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center hover:border-white hover:text-white transition-all text-white/40" aria-label="LinkedIn">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
             </a>
-            <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center hover:border-gold hover:text-gold transition-all text-white/40" aria-label="Instagram">
+            <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center hover:border-white hover:text-white transition-all text-white/40" aria-label="Instagram">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
             </a>
           </div>

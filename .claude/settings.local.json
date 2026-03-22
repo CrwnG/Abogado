@@ -4,7 +4,11 @@
       "WebFetch(domain:acriemanlaw.com)",
       "WebFetch(domain:conductlaw.com)",
       "WebFetch(domain:medjur.org)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git branch:*)",
+      "Bash(git remote:*)",
+      "Bash(git push:*)"
     ]
   }
 }
