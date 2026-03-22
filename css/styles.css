@@ -1001,13 +1001,22 @@ body {
    ============================================= */
 .reveal {
   opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(50px);
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.reveal--left { transform: translateX(-40px); }
-.reveal--right { transform: translateX(40px); }
-.reveal--scale { transform: scale(0.95); }
+.reveal--left {
+  transform: translateX(-50px);
+}
+
+.reveal--right {
+  transform: translateX(50px);
+}
+
+.reveal--scale {
+  transform: scale(0.9);
+}
 
 .revealed {
   opacity: 1;
@@ -1016,7 +1025,53 @@ body {
 
 /* Stagger children */
 .stagger-children .reveal {
-  transition-delay: calc(var(--i, 0) * 0.1s);
+  transition-delay: calc(var(--i, 0) * 0.12s);
+}
+
+/* Service block slide-in from left */
+.service-block.reveal {
+  transform: translateX(-30px) translateY(20px);
+}
+
+.service-block.revealed {
+  transform: translate(0, 0);
+}
+
+/* Testimonial cards stagger */
+.testimonial-track .testimonial-card {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.testimonial-track .testimonial-card:nth-child(1) { animation-delay: 0.1s; }
+.testimonial-track .testimonial-card:nth-child(2) { animation-delay: 0.25s; }
+.testimonial-track .testimonial-card:nth-child(3) { animation-delay: 0.4s; }
+.testimonial-track .testimonial-card:nth-child(4) { animation-delay: 0.55s; }
+
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Value items stagger */
+.value-item {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: fadeSlideRight 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.value-item:nth-child(1) { animation-delay: 0.2s; }
+.value-item:nth-child(2) { animation-delay: 0.4s; }
+.value-item:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes fadeSlideRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* =============================================
@@ -1127,31 +1182,59 @@ body {
 }
 
 /* =============================================
+   MOBILE DRAWER - responsive max-width
+   ============================================= */
+@media (max-width: 420px) {
+  .mobile-drawer {
+    max-width: 90vw;
+    padding: 80px 28px 28px;
+  }
+}
+
+/* =============================================
    MEDIA QUERIES
    ============================================= */
+
+/* --- Tablet (768px - 1050px) --- */
+@media (max-width: 1050px) and (min-width: 769px) {
+  .service-block { padding: 36px; }
+  .service-number { font-size: 3.5rem; }
+}
+
+/* --- Mobile (< 768px) --- */
 @media (max-width: 768px) {
   .hero { min-height: 100svh; }
   .hero--inner { min-height: 50svh; }
 
-  .service-block { padding: 32px 24px; }
-  .service-number { font-size: 3rem; }
+  .service-block { padding: 28px 20px; }
+  .service-number { font-size: 2.5rem; }
 
-  .testimonial-card { min-width: 300px; padding: 28px; }
+  .testimonial-card {
+    min-width: 280px;
+    max-width: 320px;
+    padding: 24px;
+  }
 
   .value-item {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 12px;
+    padding: 28px 0;
   }
 
-  .stat-item { padding: 24px 32px; }
-  .stat-number { font-size: 2rem; }
+  .stat-item { padding: 20px 24px; }
+  .stat-number { font-size: clamp(1.5rem, 5vw, 2rem); }
+  .stat-label { font-size: 0.7rem; }
 
-  .process-step { padding-left: 48px; }
+  .process-step {
+    padding-left: 48px;
+    padding-bottom: 32px;
+  }
 
   .btn-primary, .btn-ghost {
-    padding: 16px 32px;
+    padding: 16px 28px;
     width: 100%;
     justify-content: center;
+    font-size: 0.75rem;
   }
 
   .whatsapp-float {
@@ -1160,6 +1243,43 @@ body {
     width: 50px;
     height: 50px;
   }
+
+  /* Marquee text smaller on mobile */
+  .text-marquee { padding: 28px 0; }
+  .text-marquee__content {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+  .text-marquee__content span { margin: 0 24px; }
+
+  /* Section label smaller */
+  .section-label { font-size: 0.65rem; }
+
+  /* Hero eyebrow */
+  .hero-eyebrow { font-size: 0.65rem; }
+
+  /* CTA banner bg text */
+  .cta-banner__bg-text {
+    font-size: clamp(4rem, 25vw, 10rem);
+  }
+
+  /* Mobile drawer links smaller */
+  .mobile-drawer a { font-size: 1.25rem; padding: 16px 0; }
+}
+
+/* --- Small phones (< 375px) --- */
+@media (max-width: 375px) {
+  .testimonial-card {
+    min-width: 260px;
+    max-width: 280px;
+    padding: 20px;
+  }
+
+  .stat-item { padding: 16px 20px; }
+  .stat-number { font-size: 1.4rem; }
+
+  .hero-headline { font-size: clamp(1.8rem, 8vw, 2.5rem) !important; }
+
+  .text-cycle { font-size: 0.9em; }
 }
 
 /* =============================================
