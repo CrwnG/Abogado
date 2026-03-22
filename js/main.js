@@ -102,7 +102,7 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    }, { threshold: 0.05, rootMargin: '0px 0px -30px 0px' });
 
     reveals.forEach(function (el, i) {
       // Set stagger index
@@ -114,6 +114,15 @@
       }
       observer.observe(el);
     });
+
+    // Safety: if any reveal is still hidden after 4s, show it
+    setTimeout(function () {
+      reveals.forEach(function (el) {
+        if (!el.classList.contains('revealed')) {
+          el.classList.add('revealed');
+        }
+      });
+    }, 4000);
   }
 
   /* --- Smooth Scroll --- */
