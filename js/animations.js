@@ -16,34 +16,55 @@
       var items = cycle.querySelectorAll('.text-cycle__item');
       if (items.length < 2) return;
 
+      // Reset all items
+      items.forEach(function (item) {
+        item.classList.remove('active', 'exit');
+      });
+
       var current = 0;
       items[0].classList.add('active');
 
-      // Set width to widest item
+      // Measure widest item for fixed container width
       var maxWidth = 0;
       items.forEach(function (item) {
-        item.style.position = 'relative';
-        item.style.visibility = 'hidden';
+        // Temporarily make visible to measure
+        var origOpacity = item.style.opacity;
+        var origTransform = item.style.transform;
+        item.style.opacity = '0';
+        item.style.transform = 'none';
+        item.style.position = 'static';
         var w = item.offsetWidth;
         if (w > maxWidth) maxWidth = w;
+        item.style.opacity = origOpacity;
+        item.style.transform = origTransform;
         item.style.position = '';
-        item.style.visibility = '';
       });
-      cycle.style.width = maxWidth + 'px';
+      cycle.style.width = (maxWidth + 4) + 'px';
+
+      var isAnimating = false;
 
       setInterval(function () {
+        if (isAnimating) return;
+        isAnimating = true;
+
         var prev = current;
         current = (current + 1) % items.length;
 
+        // Exit current word
         items[prev].classList.remove('active');
         items[prev].classList.add('exit');
 
-        items[current].classList.add('active');
+        // Enter new word (slight delay for cleaner transition)
+        setTimeout(function () {
+          items[current].classList.add('active');
+        }, 80);
 
+        // Cleanup exit class after transition completes
         setTimeout(function () {
           items[prev].classList.remove('exit');
-        }, 600);
-      }, 2500);
+          isAnimating = false;
+        }, 550);
+      }, 3000);
     });
   }
 
